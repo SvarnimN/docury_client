@@ -298,7 +298,7 @@ const ChatPage = () => {
               <input
                 type="file"
                 ref={fileInputRef}
-                accept="application/pdf"
+                accept=".pdf,.txt,.docx,application/pdf,text/plain,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                 onChange={handleFileChange}
                 className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                 disabled={isUploading || !!uploadedFileName || isLoading}
